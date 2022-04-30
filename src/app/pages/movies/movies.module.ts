@@ -1,10 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { MoviesComponent } from './movies.component';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MovieRoutingModule } from './movies-routing.module';
 
 
 import { HttpClientModule } from '@angular/common/http';
@@ -21,20 +19,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
-
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-  ],
+  declarations: [ MoviesComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    MovieRoutingModule,
     HttpClientModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -48,12 +39,10 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatPaginatorModule,
     MatSelectModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressBarModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class MoviesModule { }

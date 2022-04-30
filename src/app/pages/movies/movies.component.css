@@ -1,0 +1,35 @@
+.my-card {
+    height: 350px;
+    width: 350px;
+  }
+  
+  
+  @media only screen and (max-width : 992px) {
+  
+    header,
+    main,
+    footer {
+      padding-left: 0;
+    }
+  }
+  
+  
+  .example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Karla');
+  
+  td,
+  th {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 200px;
+  }
+  
+  table {
+    width: 100%
+  }
+  
+  

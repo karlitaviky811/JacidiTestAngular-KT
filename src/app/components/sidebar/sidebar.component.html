@@ -1,0 +1,29 @@
+<div style="position:absolute; top:0; bottom:0; left:0; right: 0; display: flex; flex-direction: column;"
+    [ngStyle]="{'background-image': 'https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=900&t=st=1651287260~exp=1651287860~hmac=70f65a51bfbfc890954f15235c7e837588aee184fd5342dc7303608f7de22908'}">
+    <mat-sidenav-container style="flex: 1">
+        <mat-sidenav mode="side" opened="true">
+            <mat-nav-list style="padding:10px;">
+                <div class="centerelem">
+                    <a mat-list-item [routerLink]="['/']" class="styleitemMenu">
+                        <mat-icon class="spaceli" color="warn">home</mat-icon>Home
+                    </a>
+                </div>
+                <div class="centerelem">
+                    <a mat-list-item [routerLink]="['/movies']" class="styleitemMenu">
+                        <mat-icon class="spaceli" color="warn">star</mat-icon>Movies
+                    </a>
+                </div>
+                <div class="centerelem">
+                    <a mat-list-item [routerLink]="['/series']" class="styleitemMenu">
+                        <mat-icon class="spaceli" color="warn">star</mat-icon>Series
+                    </a>
+                </div>
+
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+</div>

@@ -1,11 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -25,16 +21,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-  ],
+  declarations: [ HomeComponent ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    HomeRoutingModule,
     HttpClientModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -53,7 +44,5 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class HomeModule { }

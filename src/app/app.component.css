@@ -1,0 +1,7 @@
+.image{
+    height:40em; 
+    background-size:cover;
+    width:auto;
+    background-image:url('https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=900&t=st=1651287260~exp=1651287860~hmac=70f65a51bfbfc890954f15235c7e837588aee184fd5342dc7303608f7de22908');
+    background-position:50% 50%;
+  }

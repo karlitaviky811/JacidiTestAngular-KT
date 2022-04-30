@@ -1,0 +1,23 @@
+<div style="background: rgb(222,221,221);
+background: radial-gradient(circle, rgba(222,221,221,1) 29%, rgba(255,255,255,1) 100%);">
+  <mat-toolbar color="black">
+    <mat-toolbar-row>
+      <span centerelem style="margin:10px;">
+        <mat-icon color="warn">stars</mat-icon>Movies Page
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <h1 class="center" style="margin-left: 10px;"></h1>
+  <div class="cards centerelem">
+    <mat-card *ngFor="let elem of welcomMovies" style="margin:20px;width: 20%;" class="make-it-slow">
+      <mat-card-title>{{validateText(elem)}}</mat-card-title>
+      <div class="centerelem" style="margin:10px;">
+        <img [src]="baseImg(elem.poster_path)" style="width: 100px;height: 100px;margin-left: 10px;" />
+      </div>
+      <mat-card-subtitle class="centerelem">
+        <mat-icon>star</mat-icon>
+        {{elem.vote_average}}
+      </mat-card-subtitle>
+    </mat-card>
+  </div>
+</div>

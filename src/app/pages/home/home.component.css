@@ -1,0 +1,43 @@
+.cards {
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  margin: 15px;
+  width: 20%;
+  transition: all 0.2s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-vector/wavy-background-with-copy-space_52683-65230.jpg?w=900&t=st=1651288179~exp=1651288779~hmac=9d1c1c3cc83479f959646440ad86000c973f6606f04623b8e47a47322de269ef");
+}
+
+
+.make-it-slow:hover {
+  box-shadow: 0 5px 15px rgba(238, 98, 5, 0.3);
+}
+
+.centerelem{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
